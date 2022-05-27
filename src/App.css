@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+  font-size: 1em; /* 16px/16px = 1em */
+  color: #000000;
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  padding: 0% 0; /* 0px/1200px = 0 */
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container img {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.grid1{ width:8.33333333333333%;float:left; }     /* 100px/1200px=0,0833333333333333=8,33333333333333% */
+.grid2{ width: 16.66666666666667%;float:left; }         /* 200px/1200px=0,1666666666666667=16,66666666666667% */
+.grid3{ width: 25%;float:left; }        /* 300px/1200px=0,25=25% */
+.grid4{ width:33.33333333333333%;float:left; }         /* 400px/1200px=0,3333333333333333=33,33333333333333% */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+.grid5{ width:41.66666666666667%;float:left; }    /* 500px/1200px=0,4166666666666667=41,66666666666667% */
+.grid6{ width:50%; float:left; }          /* 600px/1200px=0,5=50% */
+.grid7{ width:58.33333333333333%; float:left; }     /* 700px/1200px=0,5833333333333333=58,33333333333333% */
+.grid8{ width:66.66666666666667%; float:left; }           /* 800px/1200px=0,6666666666666667=66,66666666666667% */
+.grid9{ width:75%; float:left; }        /* 900px/1200px=0,75=75% */
+.grid10{ width:83.33333333333333%; float:left; }          /* 1000px/1200px=0,8333333333333333=83,33333333333333% */
+.grid11{ width:91.66666666666667%; float:left; }        /* 1100px/1200px=0,9166666666666667=91,66666666666667% */
+.grid12{ width: 100%; float:left; }       /* 1200px/1200px=1=100% */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+   @media screen and (max-width : 705px) {
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7,
+.grid8,
+.grid9,
+.grid10,
+.grid11,
+.grid12 {
+  width: 100%;
+}}
+a:link { text-decoration: none; color:rgb(9, 9, 10); }
+a:visited { text-decoration: none; color:rgb(11, 9, 9); }
+a:focus { text-decoration: none; color:rgb(191, 20, 45); }
+a:hover, a:active { text-decoration: none; color:rgb(247, 7, 163) }
+
+.active {
+  color: red;
 }
