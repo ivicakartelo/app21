@@ -1,11 +1,12 @@
-import React from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 
-function HeaderComponent () {
+function HeaderComponent() {
     return (
     <Navbar dark color="primary">
-        <div class="container">
+        <div className="container">
             <NavbarBrand href="/">Technology Business Education</NavbarBrand>
+            <NavbarBrand href="/about">About us</NavbarBrand>
+            <NavbarBrand href="/clients">Clients</NavbarBrand>
         </div>
     </Navbar>
     )

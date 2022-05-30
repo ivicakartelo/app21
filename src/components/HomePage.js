@@ -8,8 +8,8 @@ function BlogpostsMenu({ blogposts }) {
     return (
     <>
     {blogposts.map((post) => 
-    <div className="grid4">
-        <Card key={post.id} inverse>
+    <div className="grid4" key={post.id}>
+        <Card>
         <CardImg
         alt="Card image cap"
         src={post.image}

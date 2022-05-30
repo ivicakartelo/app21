@@ -7,8 +7,8 @@ function BlogpostsMenuLeft({ blogposts }) {
     <>
     <Nav vertical>
     {blogposts.map((post) =>  
-        <NavItem>
-            <NavLink key={post.id}  href={`/${post.id}`}>
+        <NavItem key={post.id}>
+            <NavLink href={`/${post.id}`}>
                 {post.heading}
             </NavLink>
         </NavItem>      
@@ -23,11 +23,11 @@ function BlogPost({ match }) {
 
     return (
         <>
-        <div class="grid4">
+        <div className="grid4">
             <BlogpostsMenuLeft blogposts={blogpostsData} />
         </div>
         
-        <div class="grid8">
+        <div className="grid8">
         <Card
             body
             color=""
